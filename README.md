@@ -1,6 +1,6 @@
 packages:
-numpy
-cv2 (opencv)
+numpy, 
+cv2 (opencv), 
 face_recognition
 
 
