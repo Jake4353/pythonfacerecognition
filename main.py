@@ -24,9 +24,6 @@ def photomain():
         known_face1 = face_recognition.face_encodings(known_image1)[0]
         known_face2 = face_recognition.face_encodings(known_image2)[0]
         unknown_face_encoding = face_recognition.face_encodings(unknown_image)[0]
-    except IndexError:
-        print("I wasn't able to locate any faces in at least one of the images. Check the image files. Aborting...")
-        quit()
     known_faces = [
         known_face1,
         known_face2
@@ -36,7 +33,6 @@ def photomain():
         print('Known person! nothing will happen.')
     else:
         print('Detected face is not a known person!')
-        print('If no one was meant to be at the cameras location, view the video on your NAS!')
 def videomain():
     video_capture = cv2.VideoCapture(0)
     Known_image = face_recognition.load_image_file("Known.jpg")
