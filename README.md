@@ -7,4 +7,4 @@ face_recognition
 for face_recognition you need vs code with c++
 
 Discord:
-print(“Cowski”)#1234
+print Cowski#1234
